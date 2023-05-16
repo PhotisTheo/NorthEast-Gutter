@@ -399,6 +399,23 @@
 					</div>
 				</div>
 			</div>
+			<div class="overflow-hidden mb-3">
+				<h3 class="font-weight-bold text-transform-none text-9 line-height-2 mb-0 appear-animation"
+					data-appear-animation="maskUp" data-appear-animation-delay="400">Leave A Testimonial</h3>
+				</br></br></br>
+				{% if submitted %}
+				Your Testimonial Was Submitted Succefully!
+
+				{% else %}
+
+				<form action="" method="POST">
+					{% csrf_token %}
+					{{ form.as_p }}
+
+					<input type="submit" value="Submit" class="btn btn-danger">
+				</form>
+				{% endif %}
+			</div>
 		</div>
 </div>
 </section>
