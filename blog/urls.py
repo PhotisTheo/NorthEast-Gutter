@@ -7,11 +7,11 @@ from post.views import index, blog, contact, about, services, post
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('blog/', blog),
+    path('blog/', blog, name='post-list'),
     path('contact/', contact),
     path('about/', about),
     path('services/', services),
-    path('post/', post),
+    path('post/<id>/', post, name='post-detail'),
 ]
 
 if settings.DEBUG:

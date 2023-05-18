@@ -30,7 +30,7 @@
 					<article class="mb-5">
 						<div class="card border-0 border-radius-0 box-shadow-1">
 							<div class="card-body p-4 z-index-1">
-								<a href="demo-industry-factory-blog-post.html">
+								<a href="{{ post.get_absolute_url }}">
 									<img class="card-img-top border-radius-0" src="{{ post.thumbnail.url }}"
 										alt="Card Image">
 								</a>
@@ -43,10 +43,10 @@
 								<div class="card-body p-0">
 									<h4 class="card-title mb-3 text-5 font-weight-semibold"><a
 											class="text-color-dark text-color-hover-primary text-decoration-none"
-											href="demo-industry-factory-blog-post.html">{{ post.title }}</a>
+											href="{{ post.get_ablsolute_url }}">{{ post.title }}</a>
 									</h4>
 									<p class="card-text mb-0">{{ post.overview }}</p>
-									<a href="demo-industry-factory-blog-post.html"
+									<a href="{{ post.get_absolute_url }}"
 										class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0">
 										READ MORE
 										<svg class="ms-2" version="1.1" viewBox="0 0 15.698 8.706" width="17"

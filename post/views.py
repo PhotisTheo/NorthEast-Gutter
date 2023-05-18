@@ -1,5 +1,5 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Post
 from testimonials.models import Testimonials
 from testimonials.forms import TestimonialsForm
@@ -36,6 +36,7 @@ def index(request):
 
 
 def blog(request):
+    most_recent = Post.objects.order_by('-timestamp')[:4]
     post_list = Post.objects.order_by('-timestamp')
     paginator = Paginator(post_list, 2)
     page_request_var = 'page'
@@ -86,5 +87,9 @@ def services(request):
     return render(request, 'services.html', {})
 
 
-def post(request):
-    return render(request, 'post.html', {})
+def post(request, id):
+    post = get_object_or_404(Post, id=id)
+    context = {
+        'post': post,
+    }
+    return render(request, 'post.html', context)
