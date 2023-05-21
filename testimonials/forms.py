@@ -14,7 +14,7 @@ class TestimonialsForm(ModelForm):
         }
 
         widgets = {
-            'overview': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Testimonial'}),
+            'overview': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Testimonial'}),
             'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Name'}),
             'company': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Company'}),
         }
