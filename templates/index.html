@@ -490,7 +490,7 @@
 				<article>
 					<div class="card border-0 border-radius-0 box-shadow-1">
 						<div class="card-body p-4 z-index-1">
-							<a href="/blog">
+							<a href="{{ obj.get_absolute_url }}">
 								<img class="card-img-top border-radius-0" src="{{ obj.thumbnail.url }}"
 									alt="Card Image">
 							</a>
@@ -506,7 +506,7 @@
 										href="demo-industry-factory-blog-post.html">{{ obj.title }}</a>
 								</h4>
 								<p class="card-text mb-0">{{ obj.overview }}</p>
-								<a href="/blog"
+								<a href="{{ obj.get_absolute_url }}"
 									class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0">
 									READ MORE
 									<svg class="ms-2" version="1.1" viewBox="0 0 15.698 8.706" width="17"
