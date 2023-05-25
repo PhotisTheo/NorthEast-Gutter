@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AAIA,MAAM,EAAE,SAAS,EAAE,MAAM;EACxB,AAAA,oBAAoB,CAAC;IACjB,SAAS,EAAE,MAAM;GACpB;;;AAIF,AACC,OADM,CACN,YAAY,CAAC;EACZ,UAAU,EAAE,WAAW;CACvB;;AAHF,AAIC,OAJM,CAIN,YAAY,CAAC;EACZ,UAAU,EAAE,IAAI;CAChB;;AAGF,AAEE,qBAFmB,CACpB,OAAO,CACN,YAAY,CAAC;EACZ,eAAe,EAAE,UAAU;EAC3B,UAAU,EAAE,wDAAqE;CACjF;;AAKH,AAAA,kBAAkB,CAAC;EAClB,UAAU,EAAE,KAAK;CAsBjB;;AAvBD,AAGC,kBAHiB,CAGjB,KAAK,CAAC;EACL,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;EACjB,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;CACX;;AATF,AAYE,kBAZgB,CAWjB,KAAK,CACJ,aAAa,CAAC;EACb,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,KAAK;CACZ;;AAfH,AAkBC,kBAlBiB,CAkBjB,UAAU,CAAC;EACV,KAAK,EAAE,GAAG;EACV,OAAO,EAAE,CAAC;CACV;;AAKF,AACC,OADM,AAAA,QAAQ,AAAA,eAAe,CAC7B,4BAA4B,CAAC;EAC5B,SAAS,EAAE,cAAc,CAAC,sBAAsB;CAChD",
+    "sources": [
+        "demo-seo-3.scss",
+        "../config/_imports.scss",
+        "../config/_functions.scss",
+        "../config/_helpers.scss",
+        "../config/_mixins.scss",
+        "../config/_directional.scss",
+        "../config/_variables.scss"
+    ],
+    "names": [],
+    "file": "demo-seo-3.css"
+}
