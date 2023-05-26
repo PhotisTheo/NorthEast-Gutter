@@ -20,7 +20,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-6a66.up.railway.app', 'https://*.127.0.0.1']
+    'northeast-gutter-production.up.railway.app', 'https://*.127.0.0.1']
 
 
 # Application definition
