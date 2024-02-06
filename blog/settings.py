@@ -20,7 +20,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://northeast-gutter-production.up.railway.app', 'https://*.127.0.0.1', 'northeastgutter.com', 'www.northeastgutter.com']
+    'https://northeast-gutter-production.up.railway.app', 'https://*.127.0.0.1', 'https://northeastgutter.com', 'https://www.northeastgutter.com']
 
 
 # Application definition
@@ -81,9 +81,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '481ickbyYp4TCv0GtcUW',
-        'HOST': 'containers-us-west-1.railway.app',
-        'PORT': '7128',
+        'PASSWORD': 'cgGCCdEDA2ab36BCgGfGC4ddbeGGE12D',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '26799',
     }
 }
 
